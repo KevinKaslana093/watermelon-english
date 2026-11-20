@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>试玩清单</title>
+<style>
+:root { color-scheme: light; font: 16px/1.55 system-ui, sans-serif; color: #142d35; background: #edf3f3; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+main { max-width: 44rem; margin: auto; padding: clamp(1rem, 5vw, 2.5rem); }
+header, section { border: 1px solid #d3e1e1; background: #fff; border-radius: 1.1rem; padding: clamp(1rem, 4vw, 1.55rem); }
+header { background: #143d42; color: #fff; border-color: #143d42; }
+h1, h2, h3, p { margin: 0; overflow-wrap: anywhere; }
+h1 { font-size: clamp(1.55rem, 5vw, 2.15rem); line-height: 1.25; margin: .25rem 0 .5rem; }
+h2 { font-size: 1.4rem; line-height: 1.35; }
+h3 { font-size: 1rem; }
+header p, .muted { font-size: .9rem; }
+.muted { color: #4d676e; }
+header .muted { color: #c4e2dc; }
+header a { color: #122f32; background: #d4f5e6; display: inline-block; margin-top: 1rem; text-decoration: none; border-radius: .55rem; padding: .55rem .8rem; font-weight: 650; }
+.meter { margin: 1.1rem .15rem .75rem; }
+.meter { font-size: .9rem; font-weight: 650; }
+section { margin-top: .7rem; }
+.eyebrow { color: #146955; font-size: .78rem; font-weight: 750; letter-spacing: .07em; margin-bottom: .25rem; }
+.enter { margin: .65rem 0 1.1rem; color: #39535b; }
+ol { padding-left: 1.3rem; margin: .25rem 0 1rem; }
+li { padding-left: .15rem; }
+li + li { margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid #e0eaea; }
+.observations { display: grid; gap: .35rem; margin-top: .4rem; }
+.observation { padding: .48rem .62rem; border-radius: .45rem; font-size: .92rem; }
+.good { background: #e6f4ea; color: #164932; }
+.bad { background: #fff1e8; color: #723914; }
+.observation b { margin-right: .42rem; white-space: nowrap; }
+button, summary, label { cursor: pointer; }
+button { min-height: 2.55rem; border: 1px solid #bfd3d3; padding: .45rem .7rem; border-radius: .48rem; background: #f4f8f8; color: inherit; font: inherit; }
+.finish { display: flex; align-items: center; gap: .55rem; border-radius: .55rem; background: #176950; color: white; font-weight: 650; padding: .65rem .8rem; }
+.finish input { width: 1.15rem; height: 1.15rem; margin: 0; accent-color: #f5fff7; }
+details { margin-top: .85rem; }
+details label { display: block; }
+textarea { display: block; width: 100%; min-height: 5rem; margin: .4rem 0; padding: .5rem; border: 1px solid #bfd3d3; border-radius: .45rem; font: inherit; color: inherit; }
+nav { display: flex; justify-content: space-between; gap: .6rem; margin-top: .9rem; }
+.version { margin-top: .6rem; }
+.issues { white-space: pre-wrap; margin-top: .8rem; overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid #d27223; outline-offset: 3px; }
+#page-title:focus { outline: none; }
+.step-actions { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+.step-actions .finish { padding: .45rem .65rem; }
+/* In split mode only the checklist scrolls. The game stays mounted across checks. */
+.split { max-width: 83rem; height: 100vh; height: 100dvh; display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(.35rem, 1.8vw, 1.4rem); padding: clamp(.35rem, 1.5vw, 1.2rem); overflow: hidden; }
+.split .game-panel { min-width: 0; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); border-radius: .9rem; overflow: hidden; background: #20242c; color: #fff; border: 1px solid #33404b; }
+.game-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .25rem .55rem; padding: .45rem .7rem; background: #29313d; }
+.game-head h2 { font-size: .95rem; }
+.game-head button { color: #fff; background: transparent; border-color: #6e7b88; min-height: 2rem; padding: .25rem .5rem; font-size: .82rem; }
+.game-panel iframe { width: 100%; height: 100%; display: block; border: 0; background: #20242c; }
+.game-idle { place-self: center; padding: .65rem; text-align: center; font-size: .9rem; color: #cbd7e0; }
+.checklist { min-width: 0; }
+.split .checklist { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 .2rem .4rem; }
+.split h1 { font-size: clamp(1.1rem, 2.6vw, 1.9rem); }
+.split #kind { font-weight: 650; }
+@media (max-width: 43rem) {
+  .split { grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr); }
+  .split header, .split section { padding: .6rem; border-radius: .65rem; }
+  .split h2 { font-size: 1.05rem; }
+  .split h3, .split .enter, .split .observation, .split .step-actions { font-size: .86rem; }
+  .split header a { padding: .35rem .45rem; font-size: .82rem; }
+  .split ol { padding-left: .9rem; }
+  .game-head { padding: .4rem; }
+}
+@media print { header { background: white; color: #142d35; } header .muted { color: #4d676e; } button, nav, .game-panel { display: none; } main.split { display: block; height: auto; } .split .checklist { overflow: visible; } }
+</style>
+</head>
+<body>
+<main id="layout">
+  <aside class="game-panel" id="game-panel" aria-labelledby="game-panel-title" hidden>
+    <div class="game-head">
+      <h2 id="game-panel-title">游戏试玩</h2>
+      <button type="button" id="toggle-game">退出试玩</button>
+    </div>
+    <iframe id="game-frame" title="同版游戏试玩" allow="autoplay; gamepad; fullscreen 'none'"></iframe>
+    <p id="game-idle" class="game-idle" hidden>本次试玩已结束，右侧记录已保留。</p>
+  </aside>
+  <div class="checklist">
+    <header>
+      <p class="muted" id="kind"></p>
+      <h1 id="title"></h1>
+      <p id="version"></p>
+      <p class="muted version" id="archive" hidden></p>
+      <a id="play" target="_blank" rel="noopener">打开同版试玩</a>
+    </header>
+    <div class="meter">
+      <p id="meter-label" aria-live="polite"></p>
+    </div>
+    <section id="screen" aria-labelledby="page-title"></section>
+    <p id="storage-note" class="muted" hidden>当前浏览器只在这个标签页保留勾选。</p>
+    <noscript>开启浏览器 JavaScript 后即可使用逐页勾选。</noscript>
+  </div>
+</main>
+<script type="application/json" id="checklist-data">{"game":"刀削西瓜 · English","version":"watermelon-english-trial22","mode":"trial","preview_url":"https://kevinkaslana093.github.io/watermelon-english/","web_tree_sha256":"e539589130188a400eb3d028d7428d0dda0fbcf0c0c2fc4e68b3de264acc4841","require_ad_simulator":false,"steps":[{"id":"home","page":"home","enter":"打开本次正式英文试玩，从加载进入首页。","checks":[{"action":"打开本次正式英文试玩，从加载进入首页。","expected":"保留原厨房、水果与飞刀风格；PLAY、设置和两个平台入口清楚，图标不变形、不遮主按钮。\n等待到首页时不闪黑白、不露出旧中文画面，按钮和背景不突然消失或跳位。\n长屏和短屏边缘没有文字切边、明显空洞或安全区遮挡。"}]},{"id":"guides","page":"profile_guide / shortcut_guide","enter":"分别点 Profile 和 Add to Home，再点 Close；有需要时看 Continue 的说明。","checks":[{"action":"分别点 Profile 和 Add to Home，再点 Close；有需要时看 Continue 的说明。","expected":"两页英文说明能理解，清楚表达去对应平台入口、从该入口回来及+3 Energy。\n说明文字不拥挤，Continue和Close图案清楚，弹窗风格与首页一致。\n关窗没有残影、双层遮罩或按钮闪没。"}]},{"id":"settings","page":"settings / settings_general / how_to_play","enter":"打开设置，分别点 Music 和 SFX 音量条，再关闭。","checks":[{"action":"打开设置，分别点 Music 和 SFX 音量条，再关闭。","expected":"两条音量控件含义清楚，静音和音量档位易看懂，图与字不拉伸、不重叠。\n操作时页面不抖动、不突然黑一下，关闭后画面干净。\n切换 Sound / General，打开 How to Play 后关闭：页签、说明和关闭入口清楚，无遮挡或残留。"}]},{"id":"game_pause","page":"game / pause / perfect_cut","enter":"PLAY开局，按平常方式投几刀；打开暂停，看 Continue、Retry、Home，再点Continue。","checks":[{"action":"PLAY开局，按平常方式投几刀；打开暂停，看 Continue、Retry、Home，再点Continue。","expected":"飞刀和水果保持原玩法观感，操作中没有明显掉图、残影、错层或闪屏。\nEnergy条、暂停入口及Triple Throw含义清楚，不压住水果。\n暂停窗字图清晰、层级正确，继续后回到当前局面，没有旧弹窗残留。"}]},{"id":"juice_result","page":"result","enter":"自然切完水果，点榨汁开关，看榨汁和结果页；有兴趣可点Retry或Home。","checks":[{"action":"自然切完水果，点榨汁开关，看榨汁和结果页；有兴趣可点Retry或Home。","expected":"榨汁、果汁移动及胜利转场自然，不突然露空底或跳出未完成一帧。\n结果页英文、标题、Retry与Home风格一致，字图不糊、不变形、不切边。\n重开或返回首页时没有旧玩法残影、旧弹窗或按钮错层。"}]},{"id":"revive","page":"revive / result_fail","enter":"如果正常试玩中能量耗尽，查看复活页；不用为了这项反复失误。","checks":[{"action":"如果正常试玩中能量耗尽，查看复活页；不用为了这项反复失误。","expected":"Watch Ad to Revive、No Thanks和Home语义清楚，主次易懂，按钮与边缘不挤。\n退出或广告返回后的画面没有长黑屏、错页或丢图。"}]},{"id":"conditional_retries","page":"resource_retry / save_retry / startup_retry / loading_retry","enter":"若自然出现加载/保存重试页，或本次交接已附这些页面的真实截图，再看其画面。","checks":[{"action":"若自然出现加载/保存重试页，或本次交接已附这些页面的真实截图，再看其画面。","expected":"英文故障说明简洁、Retry可辨识，文字与底板风格统一。\n没有叠窗、切边、错误旧图；可返回首页的资源重试有Home，首次加载重试有Retry，未保存胜利的重试页不提供会丢进度的退出。"}]}],"package":null,"ad_simulator":false,"progress_key":"cocos-playtest-0946d51240869dcf22e0b2e4dcbcc0e4247635b9de55c69b9ea0af5db77a65dd"}</script>
+<script>
+'use strict';
+const byId = id => document.getElementById(id);
+const plan = JSON.parse(byId('checklist-data').textContent);
+const pages = plan.steps;
+const screen = byId('screen');
+const split = plan.mode === 'package' || plan.split_preview === true;
+let results = Object.create(null);
+let cursor = 0;
+try {
+  const saved = JSON.parse(localStorage.getItem(plan.progress_key) || '{}');
+  for (const page of pages) {
+    const result = saved.results?.[page.id];
+    if (result?.status === 'pass' || (result?.status === 'issue' && typeof result.note === 'string')) {
+      results[page.id] = result;
+    }
+  }
+  if (Number.isInteger(saved.cursor)) cursor = Math.max(0, saved.cursor);
+} catch { byId('storage-note').hidden = false; }
+
+byId('kind').textContent = plan.mode === 'demo' ? '清单交互示例' :
+  plan.mode === 'package' ? '本版验收通过 · 最终交付' :
+  plan.mode === 'share' ? '可转发清单 · 在本机启动同版游戏' :
+  plan.split_preview ? '双栏样稿 · 试玩版' : '本轮逐页试玩清单';
+byId('title').textContent = plan.game;
+document.title = plan.game + ' · 试玩清单';
+byId('version').textContent = plan.version;
+byId('version').title = 'Web SHA-256 ' + plan.web_tree_sha256;
+if (plan.preview_url) {
+  const play = byId('play');
+  play.href = plan.preview_url;
+  if (plan.ad_simulator) play.textContent += '（模拟广告）';
+  if (split) {
+    byId('layout').classList.add('split');
+    byId('game-panel').hidden = false;
+    const frame = byId('game-frame');
+    const toggle = byId('toggle-game');
+    frame.src = plan.preview_url;
+    toggle.onclick = () => {
+      const reopen = frame.hidden;
+      if (reopen) frame.src = plan.preview_url;
+      else frame.removeAttribute('src');
+      frame.hidden = !reopen;
+      byId('game-idle').hidden = reopen;
+      toggle.textContent = reopen ? '退出试玩' : '重新打开游戏';
+    };
+    play.textContent = '在新标签页打开游戏' + (plan.ad_simulator ? '（模拟广告）' : '');
+  }
+} else byId('play').hidden = true;
+if (plan.package) {
+  byId('archive').hidden = false;
+  byId('archive').textContent = plan.package.name + ' · SHA-256 ' + plan.package.sha256.slice(0, 12);
+  byId('archive').title = plan.package.sha256;
+}
+
+function add(parent, tag, content, className) {
+  const node = document.createElement(tag);
+  if (content) node.textContent = content;
+  if (className) node.className = className;
+  parent.append(node);
+  return node;
+}
+
+function save() {
+  try { localStorage.setItem(plan.progress_key, JSON.stringify({cursor, results})); }
+  catch { byId('storage-note').hidden = false; }
+}
+
+function go(index) {
+  cursor = index;
+  save();
+  render(true);
+}
+
+function complete(page, status, note = '') {
+  results[page.id] = {status, note};
+  go(cursor + 1);
+}
+
+function observation(parent, className, label, text) {
+  const row = add(parent, 'div', '', 'observation ' + className);
+  add(row, 'b', label);
+  add(row, 'span', text);
+}
+
+function render(focus = false) {
+  screen.replaceChildren();
+  const firstOpen = pages.findIndex(page => !results[page.id]);
+  const lastOpen = firstOpen < 0 ? pages.length : firstOpen;
+  cursor = Math.min(cursor, lastOpen);
+  const count = Object.keys(results).length;
+  const issues = pages.filter(page => results[page.id]?.status === 'issue');
+  byId('meter-label').textContent = '通过 ' + (count - issues.length)
+    + ' · 有异常 ' + issues.length + ' · 待测 ' + (pages.length - count);
+
+  let title;
+  if (cursor === pages.length) {
+    title = add(screen, 'h2', '试玩路线已走完');
+    if (issues.length) {
+      const report = add(screen, 'textarea', '', 'issues');
+      report.readOnly = true;
+      report.setAttribute('aria-label', '异常汇总');
+      report.value = issues.map(page => '第 ' + (pages.indexOf(page) + 1) + ' 步 · ' + page.page
+        + '\n' + (results[page.id].note || '已标记异常')).join('\n\n');
+      const copy = add(screen, 'button', '复制异常');
+      copy.onclick = async () => {
+        try { await navigator.clipboard.writeText(report.value); copy.textContent = '已复制'; }
+        catch { report.focus(); report.select(); }
+      };
+    }
+  } else {
+    const page = pages[cursor];
+    const result = results[page.id];
+    add(screen, 'p', '第 ' + (cursor + 1) + ' / ' + pages.length + ' 步', 'eyebrow');
+    title = add(screen, 'h2', page.page);
+    add(screen, 'p', page.enter, 'enter');
+    const list = add(screen, 'ol');
+    for (const check of page.checks) {
+      const item = add(list, 'li');
+      add(item, 'h3', check.action);
+      const observations = add(item, 'div', '', 'observations');
+      observation(observations, 'good', '通过', check.expected);
+      if (check.problem) observation(observations, 'bad', '曾出现', check.problem);
+    }
+    const actions = add(screen, 'div', '', 'step-actions');
+    const finish = add(actions, 'label', '', 'finish');
+    const box = add(finish, 'input');
+    box.type = 'checkbox';
+    box.checked = result?.status === 'pass';
+    add(finish, 'span', '通过');
+    box.onchange = () => {
+      if (box.checked) complete(page, 'pass');
+      else {
+        delete results[page.id];
+        save();
+        render();
+      }
+    };
+    const issue = add(screen, 'details');
+    issue.open = Boolean(result?.note);
+    const noteLabel = add(issue, 'summary', '补充异常说明（可选）');
+    const note = add(issue, 'textarea');
+    note.setAttribute('aria-label', noteLabel.textContent);
+    note.value = result?.note || '';
+    const issueNext = add(actions, 'button', '有异常，继续');
+    issueNext.onclick = () => complete(page, 'issue', note.value.trim());
+  }
+  title.id = 'page-title';
+  title.tabIndex = -1;
+  if (cursor > 0 || cursor < lastOpen) {
+    const nav = add(screen, 'nav');
+    if (cursor > 0) add(nav, 'button', '上一步').onclick = () => go(cursor - 1);
+    if (cursor < lastOpen) add(nav, 'button', '下一步').onclick = () => go(cursor + 1);
+  }
+  if (focus) {
+    title.focus({preventScroll: true});
+    if (split) screen.closest('.checklist').scrollTop = 0;
+    else screen.scrollIntoView({block: 'start'});
+  }
+}
+render();
+</script>
+</body>
+</html>
