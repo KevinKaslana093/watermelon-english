@@ -1,0 +1,601 @@
+[
+  1,
+  [
+    "2aUvfyANBOU7jPcyfmoli9"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "mn",
+      "\nmn.png\nsize: 1117,503\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n2_09\n  rotate: false\n  xy: 695, 145\n  size: 121, 356\n  orig: 121, 356\n  offset: 0, 0\n  index: -1\n2_50\n  rotate: false\n  xy: 499, 2\n  size: 194, 194\n  orig: 194, 194\n  offset: 0, 0\n  index: -1\n2_55\n  rotate: false\n  xy: 818, 176\n  size: 126, 325\n  orig: 126, 325\n  offset: 0, 0\n  index: -1\n2_72\n  rotate: false\n  xy: 946, 159\n  size: 93, 342\n  orig: 93, 342\n  offset: 0, 0\n  index: -1\n2_92\n  rotate: false\n  xy: 1041, 182\n  size: 74, 319\n  orig: 74, 319\n  offset: 0, 0\n  index: -1\n2_vv\n  rotate: false\n  xy: 499, 198\n  size: 179, 303\n  orig: 179, 303\n  offset: 0, 0\n  index: -1\nlight\n  rotate: false\n  xy: 2, 3\n  size: 495, 498\n  orig: 495, 498\n  offset: 0, 0\n  index: -1\n",
+      [
+        "mn.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "fCHY6wZXoHUpXiLhWL3ZUAxZ0XY",
+          "spine": "3.8.75",
+          "x": -245.86,
+          "y": -258.5,
+          "width": 495,
+          "height": 498,
+          "images": "../../UI/首页/mn/images/",
+          "audio": "F:/0-工作文件/21.1.13-飞刀打水果/UI/首页/mn"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "bone",
+            "parent": "root",
+            "x": 0.13,
+            "y": 0.94
+          },
+          {
+            "name": "bone2",
+            "parent": "root",
+            "x": -1.05,
+            "y": 2.4
+          }
+        ],
+        "slots": [
+          {
+            "name": "light",
+            "bone": "root",
+            "attachment": "light"
+          },
+          {
+            "name": "2_72",
+            "bone": "root",
+            "attachment": "d"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "light": {
+                "light": {
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 495,
+                  "height": 498,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    2,
+                    250.19,
+                    -260.9,
+                    1,
+                    1,
+                    2,
+                    -244.81,
+                    -260.9,
+                    1,
+                    1,
+                    2,
+                    -244.81,
+                    237.1,
+                    1,
+                    1,
+                    2,
+                    250.19,
+                    237.1,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "name": "d1",
+            "attachments": {
+              "2_72": {
+                "d": {
+                  "name": "2_72",
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 93,
+                  "height": 342,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    1,
+                    51.01,
+                    -158.44,
+                    1,
+                    1,
+                    1,
+                    -41.99,
+                    -158.44,
+                    1,
+                    1,
+                    1,
+                    -41.99,
+                    183.56,
+                    1,
+                    1,
+                    1,
+                    51.01,
+                    183.56,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "name": "d2",
+            "attachments": {
+              "2_72": {
+                "d": {
+                  "name": "2_vv",
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 179,
+                  "height": 303,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    1,
+                    89.87,
+                    -151.94,
+                    1,
+                    1,
+                    1,
+                    -89.13,
+                    -151.94,
+                    1,
+                    1,
+                    1,
+                    -89.13,
+                    151.06,
+                    1,
+                    1,
+                    1,
+                    89.87,
+                    151.06,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "name": "d3",
+            "attachments": {
+              "2_72": {
+                "d": {
+                  "name": "2_92",
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 74,
+                  "height": 319,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    1,
+                    36.87,
+                    -159.94,
+                    1,
+                    1,
+                    1,
+                    -37.13,
+                    -159.94,
+                    1,
+                    1,
+                    1,
+                    -37.13,
+                    159.06,
+                    1,
+                    1,
+                    1,
+                    36.87,
+                    159.06,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "name": "d4",
+            "attachments": {
+              "2_72": {
+                "d": {
+                  "name": "2_55",
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 126,
+                  "height": 325,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    1,
+                    62.87,
+                    -162.94,
+                    1,
+                    1,
+                    1,
+                    -63.13,
+                    -162.94,
+                    1,
+                    1,
+                    1,
+                    -63.13,
+                    162.06,
+                    1,
+                    1,
+                    1,
+                    62.87,
+                    162.06,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "name": "d5",
+            "attachments": {
+              "2_72": {
+                "d": {
+                  "name": "2_50",
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 194,
+                  "height": 194,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    1,
+                    96.87,
+                    -97.94,
+                    1,
+                    1,
+                    1,
+                    -97.13,
+                    -97.94,
+                    1,
+                    1,
+                    1,
+                    -97.13,
+                    96.06,
+                    1,
+                    1,
+                    1,
+                    96.87,
+                    96.06,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "name": "d6",
+            "attachments": {
+              "2_72": {
+                "d": {
+                  "name": "2_09",
+                  "type": "mesh",
+                  "hull": 4,
+                  "width": 121,
+                  "height": 356,
+                  "uvs": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "triangles": [
+                    1,
+                    2,
+                    3,
+                    1,
+                    3,
+                    0
+                  ],
+                  "vertices": [
+                    1,
+                    1,
+                    65.01,
+                    -165.44,
+                    1,
+                    1,
+                    1,
+                    -55.99,
+                    -165.44,
+                    1,
+                    1,
+                    1,
+                    -55.99,
+                    190.56,
+                    1,
+                    1,
+                    1,
+                    65.01,
+                    190.56,
+                    1
+                  ],
+                  "edges": [
+                    0,
+                    2,
+                    2,
+                    4,
+                    4,
+                    6,
+                    0,
+                    6
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "animation": {
+            "bones": {
+              "bone2": {
+                "rotate": [
+                  {
+                    "angle": -1
+                  },
+                  {
+                    "time": 1,
+                    "angle": 180
+                  },
+                  {
+                    "time": 2
+                  }
+                ],
+                "translate": [
+                  {},
+                  {
+                    "time": 1,
+                    "y": -38.5
+                  },
+                  {
+                    "time": 2
+                  }
+                ]
+              },
+              "bone": {
+                "rotate": [
+                  {
+                    "time": 0.8,
+                    "angle": -1
+                  },
+                  {
+                    "time": 1,
+                    "angle": 180
+                  },
+                  {
+                    "time": 1.2
+                  }
+                ],
+                "translate": [
+                  {},
+                  {
+                    "time": 1,
+                    "y": -38.5
+                  },
+                  {
+                    "time": 2
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "fbwbY1DQRG4JT6b6/bKfeF"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "word-sfx",
+      "rect": [
+        0,
+        0,
+        328,
+        143
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        328,
+        143
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

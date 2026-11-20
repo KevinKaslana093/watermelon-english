@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "3eimQW+mVBY6WQwtW/KEAd"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "entry-shortcut",
+      "rect": [
+        0,
+        10,
+        720,
+        217
+      ],
+      "offset": [
+        0,
+        2
+      ],
+      "originalSize": [
+        720,
+        241
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

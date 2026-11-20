@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "e2BHUu4pBIP6KS8yCpjyop"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "word-sound",
+      "rect": [
+        0,
+        0,
+        640,
+        159
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        640,
+        159
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

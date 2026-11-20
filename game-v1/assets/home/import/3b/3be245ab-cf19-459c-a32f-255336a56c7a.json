@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "d3I6GU6tRH/aygXtu847W4"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "title-paused",
+      "rect": [
+        0,
+        0,
+        535,
+        115
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        535,
+        115
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
