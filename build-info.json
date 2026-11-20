@@ -1,7 +1,7 @@
 {
   "version": "English-v1",
-  "game_directory": "game-v1",
-  "web_tree_sha256": "f139b59325470e5c28d924bba7779333996ea537214b747aed49649b5aa2b3e5",
+  "game_directory": "game-v1-r25",
+  "web_tree_sha256": "2af113b6fd0a14347083c104b8069a679a28b59a56a4027e6fa1dce80fa91398",
   "game_files": {
     "cocos2d-js.js": "f23f0c8fe89f0a00e2ca96ff61b525f63dc90ff18850225d13bde577850835c1",
     "favicon.ico": "0ee6ea35321de21db85992f64e4b846def7abac1222fa2250318878396df988e",
@@ -20,7 +20,7 @@
     "assets/internal/config.json": "8d5ce775baeb1662edfe0d053120f0fa4f2f861de1394a736463c966ca2bb1a8",
     "assets/internal/index.js": "d8e86668a8db80c1ea94594f7fa4ad8184ddbc42af7203eb0781e773518c36a1",
     "assets/main/config.json": "e950f915be86c2ca8d7981b0cf0b4d07e6a84b350a6160125e8966628db23403",
-    "assets/main/index.js": "0a4a12508b1af9cab1b2df368621e03fac82a71b42bab2d3fab3461616e6b242",
+    "assets/main/index.js": "0c7bec76b76c3e1296dea5dd456e23f4e3804daeec322e1fe09462deac64ea65",
     "assets/main/native/1e/1e783d500.png": "b96db5efed505c1d4cafbc5dc904dcd5fd74ebd7a3c85d58bc7fc08f683ad496",
     "assets/main/native/46/46d39543-814c-4cdc-bbc2-6ecca271fcc1.png": "0cc464a57a7ddc603a147bd338828833937f3b77e6ea23ce35c9d5000bed4179",
     "assets/main/native/d9/d93da812-a014-40e3-9c39-e7259e36af3d.jpg": "ecca6df9c431a56e7001359e19751302a0a73e42b1137e5fb83d24ba1835fd63",
