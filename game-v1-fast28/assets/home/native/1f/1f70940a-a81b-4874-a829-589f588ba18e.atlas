@@ -1,0 +1,55 @@
+
+mn.png
+size: 1117,503
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2_09
+  rotate: false
+  xy: 695, 145
+  size: 121, 356
+  orig: 121, 356
+  offset: 0, 0
+  index: -1
+2_50
+  rotate: false
+  xy: 499, 2
+  size: 194, 194
+  orig: 194, 194
+  offset: 0, 0
+  index: -1
+2_55
+  rotate: false
+  xy: 818, 176
+  size: 126, 325
+  orig: 126, 325
+  offset: 0, 0
+  index: -1
+2_72
+  rotate: false
+  xy: 946, 159
+  size: 93, 342
+  orig: 93, 342
+  offset: 0, 0
+  index: -1
+2_92
+  rotate: false
+  xy: 1041, 182
+  size: 74, 319
+  orig: 74, 319
+  offset: 0, 0
+  index: -1
+2_vv
+  rotate: false
+  xy: 499, 198
+  size: 179, 303
+  orig: 179, 303
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2, 3
+  size: 495, 498
+  orig: 495, 498
+  offset: 0, 0
+  index: -1

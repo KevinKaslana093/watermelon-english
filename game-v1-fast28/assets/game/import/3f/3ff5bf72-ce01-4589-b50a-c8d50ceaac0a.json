@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "acJU+lB0hB65VKb7DuBAnY"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "cs_tex",
+      "rect": [
+        0,
+        0,
+        775,
+        1427
+      ],
+      "offset": [
+        -124.5,
+        310.5
+      ],
+      "originalSize": [
+        1024,
+        2048
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
