@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "6aaMx6Mj9Hop0hGdjTKlCj"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "digit-2",
+      "rect": [
+        0,
+        0,
+        106,
+        128
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        106,
+        128
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

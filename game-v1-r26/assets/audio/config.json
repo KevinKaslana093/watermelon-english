@@ -1,0 +1,66 @@
+{
+    "paths": {
+        "e2r9na/shHVpr8DpXtlvMB": [
+            "game/audio/0",
+            "cc.AudioClip"
+        ],
+        "b23zdmco5Gtojzm2teFpv8": [
+            "game/audio/3",
+            "cc.AudioClip"
+        ],
+        "41YYLMAzNIv6D7C44G0da3": [
+            "game/audio/4",
+            "cc.AudioClip"
+        ],
+        "8cZalomZtAm7EhFiqa+A6b": [
+            "game/audio/5",
+            "cc.AudioClip"
+        ],
+        "5blSTMYKJO5o0oedilIRxJ": [
+            "game/audio/boom",
+            "cc.AudioClip"
+        ],
+        "f2eVIaKxpFRoLbpewXDOcO": [
+            "game/audio/cut",
+            "cc.AudioClip"
+        ],
+        "a0COfH89dAmoRLHk+fcmei": [
+            "game/audio/juice",
+            "cc.AudioClip"
+        ],
+        "aeUVCN91BN0YQY8SSPxEG2": [
+            "game/audio/water",
+            "cc.AudioClip"
+        ],
+        "30dvgdySpPhYhqgbHgckKu": [
+            "home/audio/bg",
+            "cc.AudioClip"
+        ],
+        "a1y3VbX7NNBp+o+B3RRhQN": [
+            "home/audio/check",
+            "cc.AudioClip"
+        ]
+    },
+    "uuids": [
+        "30dvgdySpPhYhqgbHgckKu",
+        "41YYLMAzNIv6D7C44G0da3",
+        "5blSTMYKJO5o0oedilIRxJ",
+        "8cZalomZtAm7EhFiqa+A6b",
+        "a0COfH89dAmoRLHk+fcmei",
+        "a1y3VbX7NNBp+o+B3RRhQN",
+        "aeUVCN91BN0YQY8SSPxEG2",
+        "b23zdmco5Gtojzm2teFpv8",
+        "e2r9na/shHVpr8DpXtlvMB",
+        "f2eVIaKxpFRoLbpewXDOcO"
+    ],
+    "scenes": {},
+    "redirect": [],
+    "deps": [],
+    "packs": {},
+    "name": "audio",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "fakPRY+GtP9ap6QbTzR4yL"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "entry-profile",
+      "rect": [
+        0,
+        0,
+        720,
+        233
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "originalSize": [
+        720,
+        241
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

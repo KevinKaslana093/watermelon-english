@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "28KedS7ipHmqK+QYUOIHCs"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "panel",
+      "rect": [
+        0,
+        0,
+        989,
+        1590
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        989,
+        1590
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

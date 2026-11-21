@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ebKXm8yBxNNpKfnnIg2/ES"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "word-on",
+      "rect": [
+        0,
+        0,
+        376,
+        191
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        376,
+        191
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
