@@ -1,6 +1,6 @@
 {
   "version": "English-v1",
-  "game_directory": "game-v1-r26",
+  "game_directory": "game-v1-fast28",
   "web_tree_sha256": "2b84865be5dd0ae49bd2a039bb4cf83544a55cb7b4b43429a1ef73d74992d3b1",
   "game_files": {
     "cocos2d-js.js": "f23f0c8fe89f0a00e2ca96ff61b525f63dc90ff18850225d13bde577850835c1",
@@ -227,5 +227,6 @@
     "assets/audio/import/b2/b2df3766-728e-46b6-88f3-9b6b5e169bfc.json": "dcc1b8fdb72c664b7d94ad34e2f1ca1e48350f645fc02d4b4168452537aeed04",
     "assets/audio/import/e2/e2afd9da-fec8-4756-9afc-0e95ed96f301.json": "7e4238f967c43947d402af2618ea932dc9c3cbee5e28ccff04462b95f5386557",
     "assets/audio/import/f2/f279521a-2b1a-4546-82db-a5ec170ce70e.json": "c27c15819af09b8a179d94eda9d6af0c13b0e69030ea81fcc69663100516209e"
-  }
+  },
+  "public_entry_optimization": "preload-first-home; idle-prefetch-gameplay; timed-59.94fps; adaptive-resolution-only-when-focused-and-under42fps"
 }
